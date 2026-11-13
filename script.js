@@ -13,7 +13,11 @@ if (activeRoute != '/') {
   console.log(parts); //= ['game', 'mods']
   console.log(parts[0]); //= game
   if (parts[1] = undefined) {
-    const newWindow = window.open('app.html', '_blank', 'width=2560,height=1440');
+    if (parts[0] = test) {
+      const newWindow = window.open('test.html', '_blank', 'width=2560,height=1440');
+    } else {
+      alert('Invalid app.');
+    }
   } else {
     alert('Sorry, mods are not supported yet for scachyapp.');
   }
